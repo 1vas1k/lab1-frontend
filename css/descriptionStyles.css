@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  border-bottom: 1px solid black;
+}
+
+.header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.register {
+  padding: 10px 15px;
+  width: 20vw;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 1px solid black;
+  justify-content: center;
+  align-items: center;
+}
+
+.description {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  border-right: 1px solid black;
+  padding: 20px;
+}
+
+.hero .main-heading {
+  font-size: 36px;
+}
+
+.hero-description {
+  padding: 0px;
+  font-size: 18px;
+}
+
+.register {
+  padding: 10px 20px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.image-description {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.information-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  border-bottom: 1px solid black;
+  background-color: pink;
+}
+
+.info-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.info-card {
+  background-color: white;
+  padding: 20px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.steps-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  border-bottom: 1px solid black;
+}
+
+.steps-guide {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.step {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  padding: 20px;
+  gap: 20px;
+  background-color: white;
+}
+
+.number {
+  font-size: 40px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 20px 20px 40px 20px;
+  background-color: white;
+  border-top: 1px solid black;
+}
+
+.footer-logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list li {
+  margin: 10px 0;
+}
