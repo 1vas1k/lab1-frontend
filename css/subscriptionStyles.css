@@ -21,7 +21,6 @@ header {
   margin-top: 10vh;
   justify-content: center;
   display: flex;
-  background-color: tan;
   justify-content: center;
 }
 
@@ -41,7 +40,6 @@ header {
   width: 150px;
   height: auto;
   object-fit: cover;
-  margin-bottom: 0;
 }
 
 .subscribe {
@@ -109,11 +107,7 @@ button {
     height: 200px;
   }
 
-  form {
-    flex-direction: column;
-  }
-
-  input[type="email"],
+  input,
   button {
     width: 100%;
   }
