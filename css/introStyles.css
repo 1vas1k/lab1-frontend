@@ -20,8 +20,11 @@ header {
 }
 
 header .logo {
-  font-size: 24px;
-  font-weight: bold;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  border: 1px solid black;
+  padding: 5px;
 }
 
 header .search input {
@@ -52,11 +55,10 @@ header .search input {
 .sidebar ul {
   list-style: none;
   padding: 0 10px;
-  margin-top: 10px;
 }
 
-.sidebar ul li {
-  margin: 10px 0;
+.sidebar li {
+  margin: 20px 0;
   cursor: pointer;
   white-space: nowrap;
   overflow: hidden;
