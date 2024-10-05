@@ -27,9 +27,26 @@ header .logo {
   padding: 5px;
 }
 
-header .search input {
-  padding: 5px;
+.search {
+  position: relative;
   width: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.search input {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+  padding-right: 40px;
+}
+
+.search img {
+  position: absolute;
+  aspect-ratio: 1/1;
+  height: 30px;
+  right: 5px;
 }
 
 .navbar {
@@ -43,12 +60,14 @@ header .search input {
 
 .content-container {
   padding: 5px;
-  display: grid;
-  grid-template-columns: 20% 1fr 25%;
+  display: flex;
+  flex-direction: row;
   flex: 1;
 }
 
 .sidebar {
+  width: 20vw;
+  float: left;
   border: 1px solid black;
 }
 
@@ -66,6 +85,7 @@ header .search input {
 }
 
 main {
+  width: 55vw;
   padding: 0 10px;
 }
 
@@ -83,6 +103,8 @@ main {
 }
 
 .trends {
+  width: 25vw;
+  float: right;
   border: 1px solid black;
 }
 
@@ -95,5 +117,5 @@ main {
 .trends th,
 .trends td {
   padding: 10px;
-  text-align: left;
+  float: left;
 }
