@@ -12,7 +12,6 @@
   height: 80px;
   border-bottom: 1px solid black;
 }
-
 .header img {
   width: 50px;
   height: 50px;
@@ -43,47 +42,40 @@
   padding: 10px;
   align-items: center;
 }
-
-.image-container {
+.article .image-container {
   margin-right: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.article img {
+.article .image-container img {
   object-fit: cover;
   min-width: 100px;
   min-height: 100px;
   width: 15vw;
   height: 15vw;
 }
-
-.article-content {
+.article .article-content {
   display: flex;
   flex-direction: column;
   gap: 10px;
   height: 100%;
 }
-
-.article h2 {
+.article .article-content h2 {
   font-size: 24px;
 }
-
-.article-meta {
+.article .article-content .article-meta {
   font-size: 14px;
   color: gray;
 }
-
-.article-text {
+.article .article-content .article-text {
   line-height: 1.5;
   word-wrap: break-word;
   overflow-wrap: break-word;
   word-break: break-word;
   white-space: normal;
 }
-
-.truncated-text {
+.article .article-content .truncated-text {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -96,23 +88,19 @@
   border-left: 1px solid black;
   padding: 20px;
 }
-
-.sidebar-heading {
+.sidebar .sidebar-heading {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
 }
-
-.sidebar-article {
+.sidebar .sidebar-article {
   padding-bottom: 20px;
   margin-bottom: 20px;
 }
-
-.sidebar-article h3 {
+.sidebar .sidebar-article h3 {
   margin: 0;
 }
-
-.sidebar-article p {
+.sidebar .sidebar-article p {
   font-size: 14px;
   line-height: 1.4;
 }
@@ -128,3 +116,5 @@
     padding: 10px;
   }
 }
+
+/*# sourceMappingURL=popular.css.map */
