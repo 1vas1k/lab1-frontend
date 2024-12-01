@@ -1,128 +1,175 @@
-@base-padding: 10px;
-@base-border: 1px solid black;
-@font-family: Arial, sans-serif;
-@header-logo-size: 50px;
+@blue-color: blue;
+@white-color: white;
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: @font-family;
+  font-family: Arial, sans-serif;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
-
-header {
+.header {
+  background-color: @blue-color;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: @base-padding;
-  border-bottom: @base-border;
-
-  .logo {
-    height: @header-logo-size;
-    width: @header-logo-size;
-    border-radius: 50%;
-    border: @base-border;
-    padding: 5px;
-  }
+  padding: 10px;
+  background-color: @white-color;
+  border-bottom: 1px solid black;
 }
 
-.search {
-  position: relative;
-  width: 200px;
-  display: flex;
-  align-items: center;
-
-  input {
-    display: flex;
-    align-items: center;
-    height: 40px;
-    width: 100%;
-    padding-right: 40px;
-  }
-
-  img {
-    position: absolute;
-    aspect-ratio: 1 / 1;
-    height: 30px;
-    right: 5px;
-  }
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 1px solid black;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: @base-padding;
-  border: @base-border;
-  margin: 5px;
-}
-
-.content-container {
+.logo {
+  width: 50px;
+  height: 50px;
   padding: 5px;
+  border: 1px solid black;
+  border-radius: 100%;
+}
+
+.register {
   display: flex;
-  flex-direction: row;
-  flex: 1;
-}
-
-.sidebar {
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
   width: 20vw;
-  float: left;
-  border: @base-border;
-
-  ul {
-    list-style: none;
-    padding: 0 @base-padding;
-
-    li {
-      margin: 20px 0;
-      cursor: pointer;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-  }
+  border: 1px solid black;
+  cursor: pointer;
 }
 
-main {
-  width: 55vw;
-  padding: 0 @base-padding;
-
-  .article {
-    border: @base-border;
-    margin-bottom: 20px;
-
-    img {
-      width: 100%;
-      object-fit: cover;
-    }
-
-    p {
-      padding: 5px 5px 30px 5px;
-      margin: 0;
-    }
-  }
+.description {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  border-right: 1px solid black;
+  padding: 20px;
 }
 
-.trends {
-  width: 25vw;
-  float: right;
-  border: @base-border;
+.hero .main-heading {
+  font-size: 36px;
+}
 
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    overflow: hidden;
+.hero-description {
+  padding: 0px;
+  font-size: 18px;
+}
 
-    th,
-    td {
-      padding: @base-padding;
-      float: left;
-    }
+.image-description {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-description img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.information-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  border-bottom: 1px solid black;
+}
+
+.info-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.info-card {
+  background-color: @white-color;
+  padding: 20px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.steps-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.steps-info h1 {
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.guide-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.steps-guide {
+  width: calc(75vw + 10px);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.step {
+  padding: 10px 0;
+  display: flex;
+  width: calc(25vw - 10px);
+  min-width: 200px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  gap: 20px;
+  padding-left: 10px;
+}
+
+.number {
+  font-size: 40px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 20px 20px 40px 20px;
+  background-color: @white-color;
+  border-top: 1px solid black;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list li {
+  margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .steps-guide {
+    justify-content: center;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .register {
+    width: 50%;
   }
 }
